@@ -1,0 +1,59 @@
+.information{
+    background-color: var(--ligterBlue, grey);
+    width: 70%;
+    padding-bottom: 75px;
+    padding-left: 10%;
+
+    &__header{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.8em;
+        color: var(--blackBlue, black);
+        padding: 17px 0px 27px 52px;
+    }
+}
+
+.information-info{
+    background: #ffffff;
+    width: 80vw;
+    padding: 20px;
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.information-photo{
+    width: 150px;
+    height: 150px;
+    background-image: url('../assets/information.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+    padding-bottom: 20px;
+    opacity: 0;
+    transform:translateX(-100px);
+    transition: 1s;
+}
+.activePhoto{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.information-description{
+    width: 300px;
+    padding: 20px 0px 20px 20px;
+    flex-grow: 1;
+
+    &__header{
+        color: var(--blueOrnaments, blue);
+    }
+
+    &__list{
+        list-style: none;
+        margin-left: 1em;
+    }
+}

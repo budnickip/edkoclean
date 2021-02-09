@@ -1,0 +1,34 @@
+.main-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0em;
+
+    &__header{
+        display: none;
+    }
+}   
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .welcome__header{
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .welcome__header{
+        display: block;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .welcome__header{
+        display: block;
+    }
+}  
