@@ -12,6 +12,12 @@ const delayItems = () =>{
         if(covidPhotoPosition < screenPosition){
             covidPhoto.classList.add('activePhoto')
         }
+
+        const paperPlane = document.querySelector('.fa-paper-plane')
+
+        if(paperPlane.getBoundingClientRect().top < window.innerHeight){
+            paperPlane.classList.add('activePlane')
+        }
        
     })  
 }
