@@ -219,7 +219,7 @@
 
 @media (min-width: 1px) and (max-width: 480px) {
     .contact-details::before{
-        bottom: 0px;
+        bottom: -20px;
         left: 32px;
         right: unset;
         top: unset;
