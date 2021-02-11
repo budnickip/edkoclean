@@ -13,6 +13,11 @@ const delayItems = () =>{
             covidPhoto.classList.add('activePhoto')
         }
 
+        const pricePhoto = document.querySelector('.price-photo')
+        if(pricePhoto.getBoundingClientRect().top < window.innerHeight){
+            pricePhoto.classList.add('activePhoto')
+        }
+
         const paperPlane = document.querySelector('.fa-paper-plane')
 
         if(paperPlane.getBoundingClientRect().top < window.innerHeight){

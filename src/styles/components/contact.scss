@@ -186,12 +186,12 @@
      }
 
      &__button{
-        border: 1px solid var(--blueOrnaments, orange);
+        border: 1px solid var(--blueOrnaments, blue);
         border-radius: 15px;
         padding: 14px 28px 14px 28px;
-        width: 100px;
+        width: 140px;
         background-color: white;
-        color: var(--blueOrnaments, orange);
+        color: var(--blueOrnaments, blue);
         margin: 20px 0px;
         align-self: flex-end;
         cursor: pointer;
@@ -199,7 +199,7 @@
         transition-duration: .5s;
 
         &:hover{
-            background-color:var(--blueOrnaments, orange);
+            background-color:var(--blueOrnaments, blue);
             color: white;
             font-weight: 700;
         }

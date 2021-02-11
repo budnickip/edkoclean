@@ -16,7 +16,7 @@ export const validateName = () =>{
     if(!regex.test(name.value) || name.value.length == 0){
         if(!name.classList.contains('nameInputError')){
             name.classList.add('nameInputError')
-            let newError = createError('nameTextError', 'Your same shoulds contain minimum 3 characters.')
+            let newError = createError('nameTextError', 'Namnet mäste bestä av minst tre tecken.')
             name.parentElement.insertBefore(newError, name.nextElementSibling)
         }
         return false
@@ -38,7 +38,7 @@ export const validateEmail = () =>{
     if(!regex.test(email.value) || email.value.length == 0){
         if(!email.classList.contains('emailInputError')){
             email.classList.add('emailInputError')
-            let newError = createError('emailTextError', "It isn't email adress.")
+            let newError = createError('emailTextError', "Felaktig e-post.")
             email.parentElement.insertBefore(newError, email.nextElementSibling)
         }
         return false
@@ -60,7 +60,7 @@ export const validateMessage = () => {
         if(!regex.test(message.value) || message.value.length == 0){
             if(!message.classList.contains('messageInputError')){
                 message.classList.add('messageInputError')
-                let newError = createError('messageTextError', "Your message should contain minimum 3 characters.")
+                let newError = createError('messageTextError', "Meddelande mäste bestä av minst tre tecken.")
                 message.parentElement.insertBefore(newError, message.nextElementSibling)
             }
             return false

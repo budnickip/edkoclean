@@ -1,0 +1,44 @@
+.price{
+    @extend .information;
+    margin: 2em 0em;
+    &__header{
+        @extend .information__header;
+    }
+}
+
+.price-info{
+    @extend .information-info;
+}
+
+.price-description{
+    padding: 20px 0px 20px 20px;
+    width: 300px;
+    flex-grow: 1;
+
+    &__paragraph{
+        text-align: right;
+    }
+}
+
+.price-photo{
+    @extend .information-photo;
+    background-image: url('../assets/dolar.png');
+}
+
+
+.price-item{
+    @extend .row;
+
+    &:nth-child(even){
+        background-color: var(--ligterBlue, grey);
+    }
+
+    &__heading{
+        font-weight: 600;
+        padding-top: 1rem;
+    }
+
+    &__paragraph{
+        padding-top: 1rem;
+    }
+}
