@@ -44,6 +44,9 @@
 }
 
 @media (min-width: 1px) and (max-width: 480px) {
+    .price{
+        padding-left: 5%;
+    }
     .price-info{
         width: 90vw;
     }
