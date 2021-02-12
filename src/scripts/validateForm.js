@@ -60,7 +60,7 @@ export const validateMessage = () => {
         if(!regex.test(message.value) || message.value.length == 0){
             if(!message.classList.contains('messageInputError')){
                 message.classList.add('messageInputError')
-                let newError = createError('messageTextError', "Meddelande mäste bestä av minst tre tecken.")
+                let newError = createError('messageTextError', "Meddelande måste bestå av minst tre tecken.")
                 message.parentElement.insertBefore(newError, message.nextElementSibling)
             }
             return false
